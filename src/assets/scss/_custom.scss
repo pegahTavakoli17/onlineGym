@@ -1,0 +1,404 @@
+// COLORS
+$primary: #f1612c;
+$secondary: #2c2c2c;
+$red: #e43f32;
+$green: #00695c;
+$lightGreen: #09a461;
+$lightOrange:#f89c7b;
+
+;
+// $primary100: #2B3990;
+// $primary50:#0063F7;
+
+@font-face {
+  font-family: iransans;
+  src: url("assets/fonts/IRANSans(FaNum).ttf");
+}
+* {
+  letter-spacing: 0 !important;
+  font-family: iransans;
+  outline: none !important;
+  // user-select: none;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.9rem;
+}
+.Vue-Toastification__container {
+  text-align: right;
+  min-height: 50px !important;
+  height: fit-content !important;
+}
+.Vue-Toastification__toast {
+  min-height: 40px !important;
+  height: fit-content !important;
+  padding-bottom: 0 !important;
+
+  @media only screen and (max-width: 600px) {
+    margin: 5px auto 0;
+    width: 90% !important;
+    border-radius: 10px !important;
+  }
+}
+.Vue-Toastification__toast-body {
+  transform: translateY(-11px);
+  font-size: 0.9rem !important;
+  text-align: center;
+}
+//Expansion
+.v-expansion-panel {
+  &:before {
+    box-shadow: none !important;
+  }
+  &::after {
+    display: none;
+  }
+  .v-expansion-panel-header,
+  .v-expansion-panel-content__wrap {
+    padding: 0 10px !important;
+  }
+  .v-expansion-panel-header__icon {
+    display: none;
+  }
+}
+//Fonts
+.fs-xxlarge {
+  font-size: 1.3rem !important;
+}
+.fs-xlarge {
+  font-size: 1.2rem !important;
+}
+.fs-large {
+  font-size: 1.1rem !important;
+}
+.fs-medium {
+  font-size: 1rem !important;
+}
+.fs-small {
+  font-size: 0.9rem !important;
+}
+.fs-xsmall {
+  font-size: 0.82rem !important;
+}
+.fs-xxsmall {
+  font-size: 0.7rem !important;
+}
+//Buttons
+.v-btn {
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  transition: 0.3s all;
+}
+.bordered-btn {
+  background-color: transparent !important;
+  border: 1px solid $secondary !important;
+  color: $secondary !important;
+  font-weight: bold !important;
+}
+.c-gray {
+  color: #8c9196;
+}
+.v-menu__content {
+  box-shadow: none !important;
+  border: 1px solid #ccc;
+  border-radius: 8px !important;
+  .v-list {
+    .v-list-item__title {
+      font-size: 0.9rem !important;
+    }
+  }
+}
+// Inputs
+.v-input__slot {
+  border-radius: 10px !important;
+  label {
+    font-size: 0.9rem;
+  }
+  input {
+    font-size: 0.9rem;
+  }
+}
+.v-select__selection--comma {
+  font-size: 0.9rem !important;
+}
+// Tabs
+.v-slide-group__content {
+  border-bottom: 1px solid #999;
+}
+.v-tab--active {
+  border-radius: 10px 10px 0 0 !important;
+  background-color: $primary !important;
+  color: #fff !important  ;
+  &::before {
+    border-radius: 10px 10px 0 0 !important;
+  }
+}
+//Date picker
+.vpd-header {
+  border-radius: 10px 10px 0 0;
+  text-align: center !important;
+}
+.vpd-content {
+  border-radius: 10px !important;
+}
+.vpd-day-text {
+  color: #1b1b1b;
+}
+.vpd-addon-list,
+.vpd-container,
+.vpd-content,
+.vpd-body,
+.vpd-selected {
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #eee;
+    opacity: 0.5;
+    border-radius: 4px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 172, 172);
+    width: 10px;
+    border-radius: 4px !important;
+  }
+}
+.vpd-year-label,
+.vpd-month-label {
+  span {
+    border-radius: 6px !important;
+  }
+}
+.vpd-month-label {
+  color: #6e9d5e !important;
+}
+.vpd-selected {
+  .vpd-day-text {
+    color: #6b6868;
+  }
+  span {
+    border-radius: 10px !important;
+  }
+}
+.vpd-day:not([disabled]):hover .vpd-day-effect {
+  border-radius: 10px !important;
+}
+.vpd-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px 15px !important;
+  button {
+    border: 1px solid #6e9d5e !important;
+    border-radius: 5px !important;
+  }
+}
+.incorrect-code {
+  .vue-pincode-input {
+    max-width: 50px !important;
+    height: 50px;
+    margin: 15px;
+    border: solid 2px #9f2017 !important;
+    background-color: #e7cac8cc !important;
+    border-radius: 7px !important;
+    box-shadow: none !important;
+  }
+  @media only screen and (max-width: 600px) {
+    .vue-pincode-input {
+      max-width: 40px !important;
+      height: 40px;
+      margin: 4px !important;
+    }
+  }
+}
+
+.light {
+  .vue-pincode-input {
+    max-width: 50px !important;
+    height: 50px;
+    margin: 8px;
+    border-radius: 7px !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
+  .incorrect-code {
+    .vue-pincode-input {
+      max-width: 50px !important;
+      height: 50px;
+      margin: 8px;
+      border: solid 2px #9f2017 !important;
+      background-color: #e7cac8cc !important;
+      border-radius: 7px !important;
+      box-shadow: none !important;
+    }
+  }
+}
+.dark {
+  .vue-pincode-input {
+    max-width: 50px !important;
+    height: 50px;
+    margin: 10px;
+    border-radius: 7px !important;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    color: #fff !important;
+  }
+  .incorrect-code {
+    .vue-pincode-input {
+      max-width: 50px !important;
+      height: 50px;
+      margin: 10px;
+      border: solid 2px #bb3f36 !important;
+      background-color: transparent !important;
+      border-radius: 7px !important;
+      box-shadow: none !important;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .vue-pincode-input {
+    max-width: 50px !important;
+    height: 50px;
+    margin: 4px !important;
+  }
+  .vue-pincode-input-wrapper {
+    direction: ltr !important;
+  }
+}
+.vue-pincode-input:focus {
+  box-shadow: 0 0 2px rgb(0 0 0 / 50%) !important
+  ;
+}
+// .vue-country-select {
+//   border-right: 0px !important;
+//   border-color: #cfcfcf !important;
+//   .dropdown-list {
+//     &::-webkit-scrollbar {
+//       width: 10px;
+//     }
+
+//     &::-webkit-scrollbar-track {
+//       background-color: #eee;
+//       opacity: 0.5;
+//       border-radius: 1px !important;
+//     }
+
+//     &::-webkit-scrollbar-thumb {
+//       background-color: rgb(172, 172, 172);
+//       width: 10px;
+//       border-radius: 1px !important;
+//     }
+//   }
+// }
+// .vti__flag {
+//   border-radius: 3px !important;
+// }
+// .vue-country-select .dropdown-item {
+//   text-align: left !important;
+//   direction: ltr !important;
+//   background-color: #fff !important;
+//   opacity: 1;
+// }
+// .vue-country-select .dropdown {
+//   background-color: #ffff !important;
+// }
+// .vue-country-select:focus-within {
+//   box-shadow: none !important;
+//   outline: none !important;
+//   border-color: #ccc !important;
+// }
+// .dropdown {
+//   border-top-left-radius: 8px !important;
+//   border-bottom-left-radius: 8px !important;
+// }
+.pointer {
+  cursor: pointer !important;
+}
+/* Firefox */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.light-icon {
+  path,
+  circle {
+    stroke: rgb(59, 59, 59);
+  }
+}
+.dark-icon {
+  path,
+  circle {
+    stroke: rgb(179, 179, 179);
+  }
+}
+.white-icon {
+  path,
+  circle {
+    stroke: #fff;
+  }
+}
+.secondary-icon {
+  path,
+  circle {
+    stroke: #00838f;
+  }
+}
+.grey-icon {
+  path {
+    stroke: #c0c0c0;
+  }
+}
+.v-pagination {
+  .v-pagination__item.v-pagination__item--active {
+    background-color: transparent !important;
+    border: 1px solid $primary !important;
+    font-size: 0.8rem !important;
+    color: $primary !important;
+    border-radius: 9px !important;
+  }
+
+  .v-pagination__item {
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    font-size: 0.85rem !important;
+    outline: none !important;
+    color: $primary !important;
+    font-weight: bold !important;
+  }
+
+  .v-pagination__navigation {
+    border: 1px solid $primary !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    font-size: 12px !important;
+    border-radius: 9px !important;
+
+    path {
+      stroke: $primary;
+    }
+
+    i {
+      color: $primary;
+    }
+  }
+}
+.program-card {
+  box-shadow: none !important;
+  border-radius: 15px;
+  width: 100% !important;
+}
+
+ 
+.main-container {
+  width: 90%;
+  margin: 30px auto;
+   background-color: '$cardColor';
+  border-radius: 15px;
+  padding: 20px;
+
+}

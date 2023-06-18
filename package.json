@@ -1,0 +1,76 @@
+{
+  "name": "progym",
+  "version": "1.0.0",
+  "description": "SarMadBS Progym",
+  "author": "SarMad Business Servicess",
+  "homepage": "https://fa.sarmadbs.com",
+  "copyright": "Copyright 2023 SarMad Business Services",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --dest ./dist",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bootstrap": "^4.6.1",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^2.6.12",
+    "iransans-fontface": "^0.1.1",
+    "jquery": "^3.6.4",
+    "js-md5": "^0.7.3",
+    "moment-jalaali": "^0.8.3",
+    "underscore": "^1.13.1",
+    "validator": "^13.7.0",
+    "velocity-animate": "^1.5.2",
+    "vue": "^2.6.14",
+    "vue-excel-xlsx": "^1.0.11",
+    "vue-html-to-paper": "^1.4.4",
+    "vue-notification": "^1.3.20",
+    "vue-persian-datetime-picker": "^2.10.1",
+    "vue-router": "^3.5.3",
+    "vue-slider-component": "^3.2.15",
+    "vue-toastification": "^1.7.14",
+    "vue-tour": "^2.0.0",
+    "vuetify": "^2.6.12",
+    "vuetify-loader": "^1.7.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@mdi/font": "^5.9.55",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.5.15",
+    "@vue/cli-plugin-eslint": "^4.5.15",
+    "@vue/cli-plugin-unit-jest": "^4.5.15",
+    "@vue/cli-service": "^4.5.15",
+    "@vue/test-utils": "^1.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^25.5.1",
+    "chromedriver": "^92.0.2",
+    "deepmerge": "^4.2.2",
+    "epic-spinners": "^1.1.0",
+    
+    "eslint": "^8.2.0",
+
+    "growl": "^1.10.5",
+    "https-proxy-agent": "^2.2.1",
+    "node-sass": "^6.0.1",
+    "perfect-scrollbar": "^1.5.3",
+    "sass": "^1.43.4",
+    "sass-loader": "^9.0.3",
+    "vue-country-code": "^1.1.3",
+    "vue-pincode-input": "^0.4.0",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 9"
+  ],
+  "engines": {
+    "node": ">= 8.10.x",
+    "npm": ">= 5.6.0"
+  }
+}
