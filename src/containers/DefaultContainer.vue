@@ -49,7 +49,7 @@ export default {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
       localStorage.setItem("dark", this.$vuetify.theme.dark);
     },
-    gotoLogin() {
+    goToLogin() {
       this.$router.push("/login");
       window.localStorage.clear();
     },
